@@ -37,7 +37,7 @@ $(".nav-toggle").on('click', function(){
 // adjust the padding of the main section based on the nav width
 function adjustPadding() {
     let navHeaderWidth = $(".nav-header").width();
-    $("main").css("paddingLeft", navHeaderWidth + 10);
+    $("main").css("paddingLeft", navHeaderWidth + 12);
 }
 
 // ===========[ Navigation Links Events]=========== //
@@ -246,7 +246,7 @@ function displayIngredients(ingreds) {
 function displayContactForm() {
     let ContactContent = `
         <div class="contact-form min-vh-100 d-flex justify-content-center align-items-center">
-          <div class="container w-75 text-center">
+          <div class="container text-center">
             <div class="row g-4">
               <div class="col-md-6">
                 <input type="text" placeholder="Enter Your Name" class="form-control" id="userName">
