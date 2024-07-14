@@ -34,6 +34,12 @@ $(".nav-toggle").on('click', function(){
     }
 });
 
+// adjust the padding of the main section based on the nav width
+function adjustPadding() {
+    let navHeaderWidth = $(".nav-header").width();
+    $("main").css("paddingLeft", navHeaderWidth + 10);
+}
+
 // ===========[ Navigation Links Events]=========== //
 let navLinks = $(".nav-menu li");
 
@@ -81,12 +87,6 @@ navLinks.eq(4).on("click", function(){
     displayContactForm();
     closeNav();
 });
-
-// adjust the padding of the main section based on the nav width
-function adjustPadding() {
-    let navHeaderWidth = $(".nav-header").width();
-    $("main").css("paddingLeft", navHeaderWidth);
-}
 
 // ===========[ Search Events]=========== //
 
