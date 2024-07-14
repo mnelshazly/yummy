@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Yummy</title>
+  </head>
+  <body >
+
+    <!-- ==========[ Navbar ]========== -->
+    <nav class="vh-100 bg-danger d-flex position-fixed top-0">
+      <div class="nav-content d-flex flex-column justify-content-between p-4 text-white bg-black">
+        <div class="links">
+          <ul class="nav-menu list-unstyled overflow-hidden">
+            <li class="py-2 position-relative"> Search</li>
+            <li class="py-2 position-relative"> Categories</li>
+            <li class="py-2 position-relative"> Area</li>
+            <li class="py-2 position-relative"> Ingredients</li>
+            <li class="py-2 position-relative"> Contact Us</li>
+          </ul>
+        </div>
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer-content">
+            <p>Copyright © 2024 All Rights<br> Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-header d-flex flex-column bg-white justify-content-between align-items-center px-2 py-4">
+        <img src="images/logo.png" alt="logo image">
+        <i class="fa-solid fa-align-justify fs-2 nav-toggle"></i>
+        <div class="d-flex flex-column">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- ==========[ Main Section ]========== -->
+
+
+    <main class="position-relative min-vh-100">
+      <!-- Search Form -->
+      <div class="search-form position-relative">
+        <div class="container search-container w-75">
+
+        </div>
+      </div>
+
+      <!-- Loading Spinner -->
+      <div class="inner-loading top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+        <span class="loader"></span>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 py-5 text-white" id="meals">
+
+        </div>
+      </div>
+    </main>
+
+    <!-- ==========[ Outer Loading ]========== -->
+    <div class="loading position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+      <span class="loader"></span>
+    </div>
+
+    <!-- Javascript scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
