@@ -422,7 +422,6 @@ async function getMealByIngred(ingred) {
         hideLoading(400);
         displayMeals(data.meals);
         getMeal();
-        console.log(data.meals);
     } catch(err) {
         console.log(err);
     }
