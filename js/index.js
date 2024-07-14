@@ -2,6 +2,7 @@
 $(function(){
     searchByName("");
     hideLoading();
+    adjustPadding();
 });
 
 // ===========[ Side Navbar ]=========== //
@@ -80,6 +81,12 @@ navLinks.eq(4).on("click", function(){
     displayContactForm();
     closeNav();
 });
+
+// adjust the padding of the main section based on the nav width
+function adjustPadding() {
+    let navHeaderWidth = $(".nav-header").width();
+    $("main").css("paddingLeft", navHeaderWidth);
+}
 
 // ===========[ Search Events]=========== //
 
